@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento - AGL Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container">
+            <h1 class="logo">AGL<span> Consultoria Aeronáutica</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="AGL.html">Início</a></li>
+                    <li><a href="AGL.html#servicos">Serviços</a></li>
+                    <li><a href="AGL.html#sobre">Sobre</a></li>
+                    <li><a href="contato.html" class="btn-contato">Solicitar Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contato-container container">
+    <div class="contato-wrapper">
+        
+        <div class="contato-info">
+            <h2>Canais de Atendimento</h2>
+            <p>Escolha a forma mais conveniente para falar com os nossos especialistas</p>
+            
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>E-mail</h3>
+                    <p>aglaerocon@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>(00) 00000-0000</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 08h às 18h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box">
+            <h2 class="section-title" style="text-align: left; margin-top: 0;">Solicitar Orçamento</h2>
+           <form action="https://formspree.io/f/mqeeevgv" method="POST" class="orcamento-form">
+        <input type="hidden" name="_next" value="obrigado.html">
+        <input type="hidden" name="_subject" value="Novo Orçamento via Site">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Nome/Empresa</label>
+                        <input type="text" name="nome" placeholder="Seu nome ou Razão Social" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> E-mail</label>
+                    <input type="email" name="email" placeholder="contato@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-list"></i> Serviço Necessário</label>
+                    <select name="servico">
+                        <option value="Helipontos">Homologação de Helipontos</option>
+                        <option value="Segurança Operacional">Segurança Operacional (SMS)</option>
+                        <option value="Aerodesporto">Aerodesporto</option>
+                        <option value="Drones">Drones (SARPAS)</option>
+                        <option value="Tráfego Aéreo">Tráfego Aéreo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-comment-alt"></i> Detalhes da Solicitação</label>
+                    <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar em seu projeto?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar-moderno">
+                    Enviar Solicitação <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer id="contato">
+        <div class="container">
+            <p>&copy; 2026 AGL Consultoria Aeronáutica. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.gov.br/anac/pt-br" target="_blank" class="gov-link"><i class="fas fa-shield-alt"></i> ANAC</a>
+                <a href="https://publicacoes.decea.mil.br/" target="_blank" class="decea-link"><i class="fas fa-book"></i> Publicações DECEA</a>
+                <a href="https://aisweb.decea.mil.br/" target="_blank" class="aisweb-link"><i class="fas fa-map-marked-alt"></i> AISWEB</a>
+                <a href="https://redemet.decea.mil.br/" target="_blank" class="redemet-link"><i class="fas fa-cloud-sun"></i> REDEMET</a>
+                <a href="https://www.instagram.com/SEU_PERFIL" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i> @aglaerocon</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5500999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
